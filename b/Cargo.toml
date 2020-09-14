@@ -1,0 +1,9 @@
+[package]
+name = "b"
+version = "0.1.0"
+
+[dependencies]
+"serde" = { version = "1", default-features = false }
+
+[build-dependencies]
+a = { path = "../a", features = ["build"] }
